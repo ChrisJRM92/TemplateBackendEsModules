@@ -1,2 +1,2 @@
 # TemplateNodeJs
-Template Node JS common js
+Template Node JS Es modules

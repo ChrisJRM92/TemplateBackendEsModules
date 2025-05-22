@@ -1,8 +1,8 @@
 {
-  "name": "templatenodejs",
+  "name": "templatenodejsesmodules",
   "version": "1.0.0",
   "type": "module",
-  "description": "Template Node JS common js",
+  "description": "Template Node JS Es Modules",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon src/server.js"
