@@ -1,15 +1,10 @@
-import { DataTypes } from "sequelize";
-import sequelize from "../utils/connection";
+import Model_name from "../models/Model.js";
+import catchError from "../utils/catchError.js";
 
-const model_name = sequelize.define('nombreModelo', {
-    column1: {
-        type: DataTypes.STRING,
-        allowNull: false
-    },
-    column2: {
-        type: DataTypes.STRING(100),
-        allowNull: false
-    }
+const getAll = catchError(async(req, res)=>{
+    return res.json(/* value to be return*/)
 });
 
-export default model_name;
+export default { 
+    getAll 
+};
