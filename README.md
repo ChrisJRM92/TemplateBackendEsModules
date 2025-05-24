@@ -42,12 +42,13 @@ Create controller
 				"import ${1:modelName} from '../models/${1:modelName}.js';",
 				"",
 				"const getAll = catchError(async(req, res) => {",
+				"//sequelize operations"
 				"    return res.json(/* value to be return*/)",
 				"});",
 				"",
 				"export default {",
 				"    getAll",
-				"}"
+				"};"
 		]
 },
 ```
@@ -110,13 +111,13 @@ Create All controllers CRUD
 			"    return res.json(result[1][0]);",
 			"});",
 			"",
-			"export default {",
+			"export {",
 			"    getAll,",
 			"    create,",
 			"    getOne,",
 			"    remove,",
 			"    update",
-			"}"
+			"};"
 		]
 },
 ```
@@ -153,9 +154,9 @@ No return user password
 			"   const values = { ...this.get() };",
 			"   delete values.password ;",
 			"   return values;",
-			"};"
+			"}"
 		]
-	},
+	};,
 ```
 VerifyJwt
 ```html
@@ -219,7 +220,7 @@ Node Emailer
 			"   });",
 			"}",
 			"",
-			"export defaul { sendEmail }"
+			"export defaul { sendEmail };"
 		]
 	},
 ```
@@ -242,7 +243,7 @@ Test Migrate
 			"    }",
 			"}",
 			"",
-			"testMigrate()",
+			"testMigrate();",
 		]
 	},
 ```
