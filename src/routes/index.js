@@ -1,5 +1,5 @@
-import express from 'express';
-const router = express.Router()
+import { Router } from 'express';
+const router = Router()
 //import nameRouter from './name.router.js';
 
 //Place routes here

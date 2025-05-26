@@ -58,9 +58,9 @@ Create rute
 		"prefix": "routerES",
 		"body": [
 				"import { getAll } from '../controllers/${1:controllerFile}.js';",
-				"import express from 'express';",
+				"import { Router } from 'express';",
 				"",
-				"const ${2:routerName} = express.Router();",
+				"const ${2:routerName} = Router();",
 				"",
 				"${2:routerName}.route('/')",
 				"    .get(getAll)",
@@ -128,9 +128,9 @@ Create All routes CRUD
 		"prefix": "routerCrudES",
 		"body": [
 			"import { getAll, create, getOne, remove, update } from '../controllers/${1:controllerFile}.js';",
-			"import express from 'express';",
+			"import { Router } from 'express';",
 			"",
-			"const ${2:routerName} = express.Router();",
+			"const ${2:routerName} = Router();",
 			"",
 			"${2:routerName}.route('/')",
 			"    .get(getAll)",

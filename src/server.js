@@ -1,3 +1,4 @@
+//import './models/index.js' //Apply relationship
 import app from './app.js';
 import sequelize from './utils/connection.js';
 
@@ -6,7 +7,7 @@ console.log(PORT);
 
 const main = async () => {
     try {
-        await sequelize.sync();
+        await sequelize.sync(); //{force: true} {alter: true} !Warning
         console.log("Data base connected!");
 
         app.listen(PORT, () => {
