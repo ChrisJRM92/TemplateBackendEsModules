@@ -78,7 +78,7 @@ Create All controllers CRUD
 			"import ${1:model} from '../models/${1:model}.js';",
 			"",
 			"const getAll = catchError(async(req, res) => {",
-			"    const results = await ${1:model}.findAll();",
+			"    const results = await ${1:model}.findAll(); //{include: [model]}",
 			"    return res.json(results);",
 			"});",
 			"",
