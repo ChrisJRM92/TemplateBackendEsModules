@@ -4,7 +4,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import errorHandler from './utils/errorHandler.js';
 import morgan from 'morgan';
-// import router from './routes'
+// import router from './routes/index.js'
 //---------------------------------------------------------
 dotenv.config();
 

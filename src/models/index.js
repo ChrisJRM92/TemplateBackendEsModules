@@ -7,5 +7,5 @@
 //modelName1.belongTo(Author)
 //ModelName2.hasMany(Article)
 
-//one to one
+//many to many
 //
